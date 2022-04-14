@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from './Header';
 
 const Layout = ({ title, keywords, description, children }) => {
     return (
@@ -10,7 +11,9 @@ const Layout = ({ title, keywords, description, children }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className='container mx-auto my-7'>{children}</main>
+            <Header />
+
+            <main className="container mx-auto my-7">{children}</main>
         </div>
     );
 };
