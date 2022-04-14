@@ -1,7 +1,11 @@
-export default function HomePage() {
+import Layout from '../components/Layout';
+
+const HomePage = () => {
     return (
-        <div className="">
+        <Layout>
             <h1>Hello World</h1>
-        </div>
+        </Layout>
     );
-}
+};
+
+export default HomePage;
