@@ -13,7 +13,11 @@ const PostPage = ({
 }) => {
     return (
         <Layout title={title}>
-            <Link href="/blog">Go Back</Link>
+            <Link href="/blog">
+                <a className="border border-gray-500 text-gray-800 rounded-md p-2 my-5 transition duration-500 ease select-none hover:text-white hover:bg-gray-900 focus:outline-none focus:shadow-outline">
+                    Go Back
+                </a>
+            </Link>
             <div className="w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6">
                 <div className="flex justify-between items-center mt-4">
                     <h1 className="text-5xl mb-7">{title}</h1>
